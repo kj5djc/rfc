@@ -91,9 +91,30 @@ Table of Contents
 
 4.3.  Number
 
-      10    Primary channel
-      11    Secondary channel
-      12+   Additional channels
+   The Number field identifies the operational scope and grouping of
+   the channel or net.
+
+   Implementations SHOULD assign numbers using the following ranges:
+
+      10-19   State tactical
+      20-29   Regional tactical
+      30-39   District tactical
+      40-49   County tactical
+      50-59   Local simplex
+      90-99   Special event or temporary operations
+
+   Within each range, lower numbered channels SHOULD represent primary
+   resources and higher numbered channels SHOULD represent secondary or
+   overflow resources.
+
+   Examples:
+
+      2HAM10R    State tactical repeater
+      2HAM21R    Regional tactical repeater
+      2HAM31R    District tactical repeater
+      2HAM40R    County tactical repeater
+      2HAM50     Local simplex
+      9HAM90D    Special event digital operation
 
 4.4.  Suffix
 
